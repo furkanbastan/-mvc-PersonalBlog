@@ -1,0 +1,19 @@
+@model List<CategoryDto>
+
+<div class="d-none d-lg-block mt-5" style="background-color: rgba(255,255,255,0.02);; font-size: 1.3rem;">
+    <p class="py-2">
+        <span>KATEGORILER</span>
+        <a class="ps-2" asp-action="Create" asp-controller="Category" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Kategori Ekle"><i class="fa-solid fa-plus"></i></a>
+        <a class="ps-2" asp-action="Index" asp-controller="Category" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Kategoriler"><i class="fa-solid fa-bars"></i></a>
+    </p>
+    <div class="list-category pb-3">
+        @foreach (var category in Model)
+        {
+            <div class="mb-1"><i class="fa-solid fa-paper-plane fa-xs" style="color: orange;"></i>
+                <a class="list-link ps-2" asp-action="IndexByCategory" asp-controller="Article" asp-route-id="@category.Id">@category.Name</a>
+            </div>
+        }
+    </div>
+</div>

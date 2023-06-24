@@ -1,0 +1,24 @@
+@model ArticleDto
+
+<div class="p-5 bg-black mb-5" style="background-color:background-color: rgba(255,255,255,0.02);">
+    <h3 style="color: burlywood; font-weight: bolder; padding: ;">@Model.Title</h3>
+    <p class="text-muted">@Model.CreatedDate.Day @Model.CreatedDate.DayOfWeek @Model.CreatedDate.Year -
+            @Model.User.FirstName @Model.User.LastName </p>
+        <p class="text-muted">
+            @foreach (var category in @Model.Categories)
+                @category.Category.Name
+
+            </p>
+    <p class="article-content">@Model.Content</p>
+    <div>
+        <h6>Makale Seçenekleri</h6>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Makaleyi Düzenle</a>
+        <partial name="../Article/Delete" for="@Model.Id"></partial>
+    </div>
+</div>
+
+<partial name="../Comment/Index" ></partial>
+
+<partial name="../Comment/Create"></partial>
+
+<!-- media-body içerisinde p nin bittiği yere media elementi gelecek -->

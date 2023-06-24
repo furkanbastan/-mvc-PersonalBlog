@@ -1,0 +1,23 @@
+@model Guid
+
+<a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDeleteArticle">
+    Makaleyi Sil 
+</a>
+
+<div class="modal fade" id="modalDeleteArticle" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId"><p>Makaleyi Silmek İstediğinize Emin Misiniz?</p><p>(Bu işlem geri
+                    alınamaz.)</p></h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <form method="post" asp-action="Delete" asp-route-id="@Model.ToString()">
+                    <button type="submit" class="btn btn-danger">Sil</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

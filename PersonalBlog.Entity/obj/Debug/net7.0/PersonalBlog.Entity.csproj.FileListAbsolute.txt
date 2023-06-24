@@ -1,0 +1,12 @@
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\bin\Debug\net7.0\PersonalBlog.Entity.deps.json
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\bin\Debug\net7.0\PersonalBlog.Entity.dll
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\bin\Debug\net7.0\PersonalBlog.Entity.pdb
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.csproj.AssemblyReference.cache
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.AssemblyInfoInputs.cache
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.AssemblyInfo.cs
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.csproj.CoreCompileInputs.cache
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.dll
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\refint\PersonalBlog.Entity.dll
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\PersonalBlog.Entity.pdb
+C:\Users\bbast\OneDrive\Masaüstü\PersonalBlog\PersonalBlog.Entity\obj\Debug\net7.0\ref\PersonalBlog.Entity.dll

@@ -1,0 +1,75 @@
+<div class="p-5 bg-black mb-5" style="background-color:background-color: rgba(255,255,255,0.02);">
+    <h3 style="color: burlywood; font-weight: bolder; padding: ;">Kişisel Profilim</h3>
+    <form method="get" asp-action="Edit">
+        <div class="mb-3 d-flex align-items-baseline">
+            <label for="Name" class="form-label" style="width: 10rem;">Ad</label>
+            <input type="text" class="form-control border-0 rounded-0 bg-black text-light mt-4" name="Name"
+                id="Name" aria-describedby="Name" placeholder="ISIM" value="Furkan" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+
+        <div class="mb-3 d-flex align-items-baseline">
+            <label for="Name" class="form-label" style="width: 10rem;">Soyad</label>
+            <input type="text" class="form-control border-0 rounded-0 bg-black text-light mt-4"
+                name="Surname" id="Surname" aria-describedby="Surname" placeholder="SOYISIM" value="Baştan" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+        
+        <div class="mb-3 d-flex align-items-baseline">
+            <label for="Email" class="form-label" style="width: 10rem;">Email</label>
+            <input type="email" class="form-control border-0 rounded-0 bg-black text-light mt-4"
+                name="Email" id="Email" aria-describedby="emailHelpId" placeholder="EMAIL" value="furkanbastan@gmail.com" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+        
+        <div class="mb-3 d-flex align-items-baseline">
+            <label for="Describe" class="form-label" style="width: 10rem;">Açıklama</label>
+            <div class="mb-3 col">
+                <textarea class="form-control border-0 rounded-0 bg-black text-light mt-4" name="Describe"
+                    id="Describe" rows="8" placeholder="AÇIKLAMA EKLENMEMİŞ" disabled></textarea>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+
+        <div class="mb-3 d-flex mt-4">
+            <i class="fa-brands fa-linkedin fa-2xl me-2"></i>
+            <input type="text" class="form-control border-0 rounded-0 bg-black text-light" name="Linkedin"
+                id="Linkedin" aria-describedby="Linkedin" placeholder="LINKEDIN LINK EKLENMEMİŞ" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+
+        <div class="mb-3 d-flex mt-4">
+            <i class="fa-brands fa-facebook fa-2xl me-2"></i>
+            <input type="text" class="form-control border-0 rounded-0 bg-black text-light" name="Facebook"
+                id="Facebook" aria-describedby="Facebook" placeholder="FACEBOOK LINK EKLENMEMİŞ" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+
+        <div class="mb-3 d-flex mt-4">
+            <i class="fa-brands fa-github fa-2xl me-2"></i>
+            <input type="text" class="form-control border-0 rounded-0 bg-black text-light" name="Github"
+                id="Github" aria-describedby="Github" placeholder="GITHUB LINK EKLENMEMİŞ" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+
+        <div class="mb-3 d-flex mt-4">
+            <i class="fa-brands fa-twitter fa-2xl me-2"></i>
+            <input type="text" class="form-control border-0 rounded-0 bg-black text-light" name="Twitter"
+                id="Twitter" aria-describedby="Twitter" placeholder="TWITTER LINK EKLENMEMİŞ" disabled>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+
+        <div class="mb-3">
+            <div class="mb-3 mt-4">
+                <label for="Biography" class="form-label" style="width: 10rem;">Biyografi</label>
+                <textarea class="form-control border-0 rounded-0 bg-black text-light" name="Biography"
+                    id="Biography" placeholder="BİYOGRAFİ EKLENMEMİŞ" disabled></textarea>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #fff;"></div>
+        
+        <div class="d-grid gap-2 mt-4">
+            <button type="submit" class="btn btn-primary">Bilgileri Düzenle</button>
+        </div>
+    </form>
+</div>

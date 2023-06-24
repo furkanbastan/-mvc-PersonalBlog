@@ -1,0 +1,19 @@
+
+<button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDeleteComment">Sil</button>
+
+<div class="modal fade" id="modalDeleteComment" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId"><p class="border-0">Yorumu Silmek İstediğinize Emin Misiniz?</p></h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <form method="post" asp-action="Index">
+                    <button type="submit" class="btn btn-danger">Sil</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

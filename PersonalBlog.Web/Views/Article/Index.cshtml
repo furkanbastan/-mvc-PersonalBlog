@@ -1,0 +1,29 @@
+@model ArticleListDto
+
+@foreach (var article in Model.Articles)
+{
+    <div class="p-5 bg-black mb-5" style="background-color:background-color: rgba(255,255,255,0.02);">
+        <h3 style="color: burlywood; font-weight: bolder; padding: ;">@article.Title</h3>
+        <p class="text-muted">@article.CreatedDate.Day @article.CreatedDate.DayOfWeek @article.CreatedDate.Year -
+            @article.User.FirstName @article.User.LastName </p>
+        <p class="text-muted">
+            @foreach (var category in @article.Categories)
+                @category.Category.Name
+
+
+            </p>
+            <span class="article-content">@article.Content</span>
+            <span>...</span>
+            <a asp-action="Detail" asp-controller="Article" asp-route-id="@article.Id" class="read-more">[Daha Fazla...]</a>
+        </div>
+}
+
+<script>
+    const removeStr = () => {
+        var elements = document.getElementsByClassName('article-content');
+        for (var element of elements) {
+            element.innerText = element.innerText.substring(0, 500);
+        }
+    }
+    removeStr();
+</script>

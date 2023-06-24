@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furkan Baştan - Bilgisayar Mühendisinin Notları</title>
+    <link rel="icon" type="image/x-icon" href="~/img/favicon.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PersonalBlog.Web.styles.css" asp-append-version="true" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-dark" style="color: white;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="row">
+                    @await Component.InvokeAsync("Profile")
+
+                    @await Component.InvokeAsync("Search")
+
+                    @await Component.InvokeAsync("Category")
+
+                    @await Component.InvokeAsync("LastComment")
+
+                    @await Component.InvokeAsync("Footer")
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="row"></div>
+                @RenderBody()
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
